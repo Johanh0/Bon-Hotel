@@ -1,0 +1,102 @@
+// Import of the font from Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+
+
+
+// Import from Boostrap and changes
+    //Primary Color
+    $primary: #957554;
+    $secondary: #DFAA5B;
+
+    //HTML
+    html {
+        scroll-behavior: smooth;
+    }
+
+
+    //Text Styles
+    $font-family-sans-serif: 'Ubuntu', sans-serif;
+
+    // Hero section Style
+    .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/img/heroImg.jpg');
+        background-position: center;
+        background-size: cover
+    }
+
+    // Facilities section Style
+    .facilities-section {
+        bottom: 100px;
+    }
+
+    // Rooms & Rates section Style
+    .rooms-article {
+        height: 500px;
+        transition: .5s ease;
+
+        &:hover {
+            transition: .5s ease;
+            transform: scale(1.02);
+        }
+    }
+
+    .article-1 {
+        background: linear-gradient(rgba(0, 0, 0, 0.323), rgba(0, 0, 0, 0.503)), url('../assets/img//article-1.jpg');
+        background-position: center;
+        background-size: cover
+    }
+
+    .article-2 {
+        background: linear-gradient(rgba(0, 0, 0, 0.323), rgba(0, 0, 0, 0.503)), url('../assets/img//article-2.jpg');
+        background-position: center;
+        background-size: cover
+    }
+
+    .article-3 {
+        background: linear-gradient(rgba(0, 0, 0, 0.323), rgba(0, 0, 0, 0.503)), url('../assets/img//article-3.jpg');
+        background-position: center;
+        background-size: cover
+    }
+
+    .article-4 {
+        background: linear-gradient(rgba(0, 0, 0, 0.323), rgba(0, 0, 0, 0.503)), url('../assets/img//article-4.jpg');
+        background-position: center;
+        background-size: cover
+    }
+
+
+    // Arrow to scroll up
+    .scroll-up-container {
+        position: sticky;
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 20px 15px 0;
+        left: 0;
+        bottom: 15px;
+        
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            background-color: black;
+    
+            i {
+                color: white;
+                font-size: 1rem;
+                transition: all .4s;
+    
+                &:hover {
+                    font-size: 1.5rem;
+                    transition: all .4s;
+                }
+            }
+        }
+    }
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
