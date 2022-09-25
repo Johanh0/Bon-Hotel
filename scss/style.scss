@@ -66,6 +66,24 @@
         background-size: cover
     }
 
+    // Contact Us section Style
+    .contact-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.462), rgba(0, 0, 0, 0.678)), url('../assets/img/contactBg.jpg');
+        background-position: center;
+        background-size: cover;
+
+        .contact-container {
+            height: 550px;
+
+            .contact-right {
+                background-image: url('../assets/img/contactImg.jpg');
+                background-position: center;
+                background-size: cover;
+                
+            }
+        }
+    }
+
 
     // Arrow to scroll up
     .scroll-up-container {
@@ -84,7 +102,7 @@
             border-radius: 50%;
             width: 40px;
             height: 40px;
-            background-color: black;
+            background-color: #111111;
     
             i {
                 color: white;
@@ -99,4 +117,18 @@
         }
     }
 
+    // Footer 
+
+    .footer {
+        background-color: #111111;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            .footer-li {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
